@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vita Farma — ekosistem digital apotek end-to-end: PWA pelanggan, POS kasir, inventory, analisis ABC-VEN, aplikasi Flutter staf, dan layanan kesehatan terintegrasi." />
+  <meta name="theme-color" content="#0d9488" />
+  <title>Vita Farma — Sistem Apotek Digital Terintegrasi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/png" href="assets/images/logo.png" />
+</head>
+<body>
+  <a href="#main" class="skip-link">Langsung ke konten</a>
+
+  <header class="site-header" id="header">
+    <div class="container header-inner">
+      <a href="#" class="brand" aria-label="Vita Farma Beranda">
+        <img src="assets/images/logo.png" alt="Vita Farma" class="brand__logo" />
+        <span class="brand__text">Vita Farma</span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigasi utama">
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li><a href="#fitur" class="nav-link">Fitur</a></li>
+          <li><a href="#ekosistem" class="nav-link">Ekosistem</a></li>
+          <li><a href="#alur" class="nav-link">Alur</a></li>
+          <li><a href="#teknologi" class="nav-link">Teknologi</a></li>
+          <li><a href="#demo" class="nav-link">Demo</a></li>
+          <li><a href="#kontak" class="nav-link nav-link--cta">Hubungi Kami</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+      </div>
+      <div class="container hero__content">
+        <div class="hero__text">
+          <span class="eyebrow">💊 SMART PHARMACY &amp; POS SYSTEM</span>
+          <h1 id="heroTitle" class="hero__title">
+            Ekosistem Digital Apotek <span class="text-gradient">Lengkap dalam Satu Genggaman</span>
+          </h1>
+          <p class="hero__lead">
+            Vita Farma menghubungkan pengalaman belanja pelanggan dengan operasional internal apotek — mulai dari katalog online, upload resep, POS kasir, inventory, analisis ABC‑VEN, hingga aplikasi Flutter khusus staf.
+          </p>
+          <div class="hero__actions">
+            <a href="#fitur" class="btn btn--primary btn--lg">Jelajahi Fitur</a>
+            <a href="#demo" class="btn btn--secondary btn--lg">Coba Akun Demo</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <strong class="stat__number" data-count="5">0</strong>
+              <span class="stat__label">Kanal Aplikasi</span>
+            </div>
+            <div class="stat">
+              <strong class="stat__number" data-count="11">0</strong>
+              <span class="stat__label">Role Staf</span>
+            </div>
+            <div class="stat">
+              <strong class="stat__number" data-count="24">0</strong>
+              <span class="stat__label">Jam Layanan</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="phone-mockup">
+            <div class="phone-screen">
+              <div class="screen-topbar">
+                <span class="screen-logo">Vita Farma</span>
+                <span class="screen-icon">🔔</span>
+              </div>
+              <div class="screen-search">🔍 Cari obat, vitamin, alkes...</div>
+              <div class="screen-banner">Panggil Dokter 24/7</div>
+              <div class="screen-grid">
+                <div class="screen-tile">💊 Obat</div>
+                <div class="screen-tile">🩺 Dokter</div>
+                <div class="screen-tile">🚨 Darurat</div>
+                <div class="screen-tile">📝 Resep</div>
+              </div>
+              <div class="screen-products">
+                <div class="screen-product"></div>
+                <div class="screen-product"></div>
+                <div class="screen-product"></div>
+              </div>
+            </div>
+          </div>
+          <div class="floating-card floating-card--1">
+            <span class="floating-card__icon">✅</span>
+            <span class="floating-card__text">Resep terverifikasi Apoteker</span>
+          </div>
+          <div class="floating-card floating-card--2">
+            <span class="floating-card__icon">📦</span>
+            <span class="floating-card__text">Stok terkoneksi real-time</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust" aria-label="Keunggulan utama">
+      <div class="container trust__grid">
+        <div class="trust__item">
+          <div class="trust__icon">🏥</div>
+          <h3>Apotek Resmi</h3>
+          <p>Berlokasi di Jl. Bung Karno No.78, Mataram, NTB dengan kepatuhan regulasi kefarmasian Indonesia.</p>
+        </div>
+        <div class="trust__item">
+          <div class="trust__icon">🔒</div>
+          <h3>Data Aman</h3>
+          <p>Autentikasi terpisah, proteksi CSRF, query terparameterisasi, dan audit trail untuk resep &amp; stok.</p>
+        </div>
+        <div class="trust__item">
+          <div class="trust__icon">📊</div>
+          <h3>Analisis WHO</h3>
+          <p>Analisis ABC‑VEN baku WHO untuk prioritas pengadaan obat yang mengutamakan keselamatan pasien.</p>
+        </div>
+        <div class="trust__item">
+          <div class="trust__icon">⚡</div>
+          <h3>Satu Database</h3>
+          <p>Seluruh kanal — PWA, Flutter pelanggan, dan Flutter staf — terhubung ke satu sumber kebenaran.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="features section" id="fitur" aria-labelledby="featuresTitle">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">✨ FITUR UTAMA</span>
+          <h2 id="featuresTitle" class="section__title">Semua yang Dibutuhkan Apotek Modern</h2>
+          <p class="section__lead">Dari etalase digital untuk pelanggan sampai panel operasional untuk owner, apoteker, kasir, gudang, dan kurir.</p>
+        </div>
+
+        <div class="features__grid">
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--customer">🛍️</div>
+            <h3 class="feature-card__title">Customer PWA</h3>
+            <p class="feature-card__desc">Katalog obat/vitamin/alkes, keranjang real-time, checkout, upload resep dokter, riwayat pesanan, dan installable PWA.</p>
+            <ul class="feature-card__list">
+              <li>Pencarian &amp; filter kategori</li>
+              <li>Promo banner dinamis</li>
+              <li>Chat dokter/apoteker</li>
+              <li>Mode offline-friendly</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--mobile">📱</div>
+            <h3 class="feature-card__title">Aplikasi Pelanggan Flutter</h3>
+            <p class="feature-card__desc">Versi native Android/iOS dengan pengalaman sama seperti PWA, autentikasi Sanctum token, dan notifikasi lokal.</p>
+            <ul class="feature-card__list">
+              <li>Login/register aman</li>
+              <li>Keranjang &amp; checkout real-time</li>
+              <li>Kirim resep &amp; cek status</li>
+              <li>Layanan kesehatan terintegrasi</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--staff">🖥️</div>
+            <h3 class="feature-card__title">Backend Staff Desktop</h3>
+            <p class="feature-card__desc">Panel <em>density-first</em> untuk kerja sehari-hari: dashboard, POS, inventory, purchasing, laporan, dan CMS frontpage.</p>
+            <ul class="feature-card__list">
+              <li>POS/Kasir dengan shift</li>
+              <li>Kartu stok &amp; stok opname</li>
+              <li>PO → approval → penerimaan</li>
+              <li>Laporan keuangan &amp; ED</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--staffm">🚀</div>
+            <h3 class="feature-card__title">Backend Staff Mobile</h3>
+            <p class="feature-card__desc">PWA companion untuk staf lapangan: buka/tutup shift, kasir cepat, cek stok, notifikasi, dan profil.</p>
+            <ul class="feature-card__list">
+              <li>Kasir cadangan dari HP</li>
+              <li>Tracking stok instan</li>
+              <li>Notifikasi operasional</li>
+              <li>Installable sebagai PWA</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--abc">📈</div>
+            <h3 class="feature-card__title">Analisis ABC‑VEN</h3>
+            <p class="feature-card__desc">Metodologi WHO: kelas ABC dari nilai pemakaian digabung kekritisan klinis VEN menjadi kategori prioritas I/II/III.</p>
+            <ul class="feature-card__list">
+              <li>Generate otomatis dari penjualan</li>
+              <li>Matriks 3×3 interaktif</li>
+              <li>Dasar safety stock &amp; PO</li>
+              <li>Mencegah stockout obat vital</li>
+            </ul>
+          </article>
+
+          <article class="feature-card reveal">
+            <div class="feature-card__icon feature-card__icon--health">🩺</div>
+            <h3 class="feature-card__title">Layanan Kesehatan</h3>
+            <p class="feature-card__desc">Panggil Dokter, Ambulans, Cek Lab Mobile, Konsultasi Online — lengkap dengan form prioritas dan tombol darurat.</p>
+            <ul class="feature-card__list">
+              <li>Prioritas darurat/mendesak/terjadwal</li>
+              <li>Tracking status layanan</li>
+              <li>Chat langsung dengan dokter</li>
+              <li>Tombol darurat cepat</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="ecosystem section section--alt" id="ekosistem" aria-labelledby="ecosystemTitle">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">🌐 EKOSISTEM</span>
+          <h2 id="ecosystemTitle" class="section__title">Satu Data, Banyak Kanal</h2>
+          <p class="section__lead">Semua aplikasi terhubung ke backend Laravel yang sama. Perubahan stok, harga, atau status pesanan tercermin secara real-time di setiap kanal.</p>
+        </div>
+
+        <div class="ecosystem__diagram reveal" aria-label="Diagram ekosistem Vita Farma">
+          <div class="ecosystem__node ecosystem__node--core">
+            <img src="assets/images/logo.png" alt="" />
+            <span>Laravel Backend<br /><small>satu database</small></span>
+          </div>
+          <div class="ecosystem__branches">
+            <div class="ecosystem__branch">
+              <div class="ecosystem__leaf">
+                <span>🛒</span>
+                <strong>Customer PWA</strong>
+              </div>
+              <div class="ecosystem__leaf">
+                <span>📱</span>
+                <strong>Flutter Pelanggan</strong>
+              </div>
+            </div>
+            <div class="ecosystem__branch">
+              <div class="ecosystem__leaf">
+                <span>🖥️</span>
+                <strong>Staff Desktop</strong>
+              </div>
+              <div class="ecosystem__leaf">
+                <span>🚀</span>
+                <strong>Staff Mobile</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="roles-grid reveal">
+          <h3 class="roles-grid__title">Peran &amp; Akses</h3>
+          <div class="role-chip">Pelanggan</div>
+          <div class="role-chip">Owner</div>
+          <div class="role-chip">Apoteker</div>
+          <div class="role-chip">Kasir</div>
+          <div class="role-chip">Staff Gudang</div>
+          <div class="role-chip">Kurir</div>
+          <div class="role-chip">Dokter</div>
+          <div class="role-chip">Analis Lab</div>
+          <div class="role-chip">Franchisor</div>
+          <div class="role-chip">Manajer Cabang</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow section" id="alur" aria-labelledby="workflowTitle">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">🔄 ALUR KERJA</span>
+          <h2 id="workflowTitle" class="section__title">Dari Resep Sampai Pesanan Selesai</h2>
+          <p class="section__lead">Pelanggan, apoteker, gudang, dan kurir bekerja dalam satu alur terintegrasi yang transparan.</p>
+        </div>
+
+        <ol class="workflow__steps">
+          <li class="workflow__step reveal">
+            <div class="workflow__badge">1</div>
+            <div class="workflow__content">
+              <h3>Pelanggan Pesan</h3>
+              <p>Pelanggan mencari produk atau mengunggah foto resep dokter melalui PWA atau aplikasi Flutter.</p>
+            </div>
+          </li>
+          <li class="workflow__step reveal">
+            <div class="workflow__badge">2</div>
+            <div class="workflow__content">
+              <h3>Verifikasi Apoteker</h3>
+              <p>Apoteker Penanggung Jawab memeriksa legalitas resep, dosis, dan ketersediaan stok obat.</p>
+            </div>
+          </li>
+          <li class="workflow__step reveal">
+            <div class="workflow__badge">3</div>
+            <div class="workflow__content">
+              <h3>Staf Gudang Menyiapkan</h3>
+              <p>Item dikeluarkan dari lokasi etalase/batch sesuai kartu stok; stok berkurang otomatis.</p>
+            </div>
+          </li>
+          <li class="workflow__step reveal">
+            <div class="workflow__badge">4</div>
+            <div class="workflow__content">
+              <h3>Kurir Mengantar / Pelanggan Ambil</h3>
+              <p>Status pesanan diperbarui; pelanggan bisa melacak progress secara real-time.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="tech section section--alt" id="teknologi" aria-labelledby="techTitle">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">🛠️ TEKNOLOGI</span>
+          <h2 id="techTitle" class="section__title">Dibangun dengan Stack Modern &amp; Andal</h2>
+        </div>
+
+        <div class="tech__grid reveal">
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--laravel">Laravel</div>
+            <h4>Backend</h4>
+            <p>Laravel 13 + PHP 8.3+ dengan REST API first-party dan session-based auth.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--mysql">MySQL</div>
+            <h4>Database</h4>
+            <p>MySQL 8.4 sebagai satu sumber kebenaran data produk, stok, pesanan, dan resep.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--flutter">Flutter</div>
+            <h4>Mobile</h4>
+            <p>Flutter 3.44 + Dart 3.12 + Riverpod untuk aplikasi pelanggan dan staf.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--pwa">PWA</div>
+            <h4>Web App</h4>
+            <p>Manifest + service worker, cache-first statis, network-first data, splash screen.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--rest">REST</div>
+            <h4>API</h4>
+            <p>Endpoint terpisah untuk pelanggan dan staf, dilindungi CSRF &amp; validasi ketat.</p>
+          </div>
+          <div class="tech-card">
+            <div class="tech-card__logo tech-card__logo--sanctum">Sanctum</div>
+            <h4>Auth</h4>
+            <p>Laravel Sanctum untuk Bearer token di aplikasi Flutter; cookie session untuk PWA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="demo section" id="demo" aria-labelledby="demoTitle">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="eyebrow eyebrow--center">🎮 DEMO</span>
+          <h2 id="demoTitle" class="section__title">Coba Sendiri</h2>
+          <p class="section__lead">Password semua akun demo: <code class="code-badge">password</code>. Hanya untuk lingkungan lokal/uji.</p>
+        </div>
+
+        <div class="demo__grid reveal">
+          <div class="demo-card">
+            <h4>👤 Pelanggan</h4>
+            <p><code>rina@vitafarma.test</code></p>
+            <span class="demo-card__area">Customer PWA / Flutter</span>
+          </div>
+          <div class="demo-card">
+            <h4>🏢 Owner</h4>
+            <p><code>owner@vitafarma.test</code></p>
+            <span class="demo-card__area">Staff Desktop / Staff Mobile</span>
+          </div>
+          <div class="demo-card">
+            <h4>⚕️ Apoteker</h4>
+            <p><code>apoteker@vitafarma.test</code></p>
+            <span class="demo-card__area">Staff Desktop</span>
+          </div>
+          <div class="demo-card">
+            <h4>💳 Kasir</h4>
+            <p><code>kasir@vitafarma.test</code></p>
+            <span class="demo-card__area">POS / Staff Mobile</span>
+          </div>
+          <div class="demo-card">
+            <h4>📦 Gudang</h4>
+            <p><code>gudang@vitafarma.test</code></p>
+            <span class="demo-card__area">Inventory / Staff Mobile</span>
+          </div>
+          <div class="demo-card">
+            <h4>🚚 Kurir</h4>
+            <p><code>kurir@vitafarma.test</code></p>
+            <span class="demo-card__area">Pengiriman / Staff Mobile</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta section" aria-labelledby="ctaTitle">
+      <div class="container cta__inner reveal">
+        <h2 id="ctaTitle" class="cta__title">Siap Transformasi Apotek Anda?</h2>
+        <p class="cta__lead">Vita Farma adalah bukti nyata bagaimana teknologi dapat menyatukan pelayanan pelanggan, kepatuhan regulasi, dan efisiensi operasional dalam satu ekosistem.</p>
+        <a href="#kontak" class="btn btn--light btn--lg">Mulai Diskusi</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="kontak">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a href="#" class="brand">
+          <img src="assets/images/logo.png" alt="" class="brand__logo" />
+          <span class="brand__text">Vita Farma</span>
+        </a>
+        <p>Jl. Bung Karno No.78, Mataram, Nusa Tenggara Barat, Indonesia.</p>
+        <p class="footer__copy">© 2026 Apotek Vita Farma. All rights reserved.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#fitur">Fitur</a></li>
+          <li><a href="#ekosistem">Ekosistem</a></li>
+          <li><a href="#alur">Alur</a></li>
+          <li><a href="#teknologi">Teknologi</a></li>
+          <li><a href="#demo">Demo</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Project</h4>
+        <ul>
+          <li><a href="https://github.com" target="_blank" rel="noopener">Customer PWA</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">Flutter Pelanggan</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">Backend Staff</a></li>
+          <li><a href="https://github.com" target="_blank" rel="noopener">Flutter Staff</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Kontak</h4>
+        <ul>
+          <li>📧 info@vitafarma.id</li>
+          <li>📞 (0370) 123-4567</li>
+          <li>🕒 Buka 24 jam</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
